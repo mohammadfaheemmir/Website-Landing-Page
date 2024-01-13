@@ -1,0 +1,290 @@
+
+* { 
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --orange: #FFB766;
+    --white: #ffffff;
+    --blakish : #332000;
+    --black : #000000;
+    --light-orange :#FFE7CC;
+}
+
+nav {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    background-color: var(--light-orange);
+    border-radius: 5px;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--blakish);
+    font-size: 18px;
+    transition: 0.2s ease;
+    padding:10px 20px;
+}
+
+nav .mainMenu li a:hover {
+    color: var(--orange);
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: rgb(0, 110, 255);
+}
+
+.fa-twitter:hover {
+    color: rgb(86, 154, 243);
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 0, 191);
+}
+
+.fa-github:hover {
+    color: rgb(255, 123, 0);
+}
+
+i {
+    color: var(--black);
+}
+
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.logo img {
+    height: 35px;
+}
+
+.logo p {
+    font-size: 22px;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+
+.play {
+    height: 46px;
+    width: 125px;
+    border-radius: 20px;
+    background-color: var(--orange);
+    border: none;
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.play:hover {
+    color: var(--white);
+    background-color: var(--blakish);
+    transition: .3s linear;
+    opacity: .5;
+}
+
+/*  Header Section */
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.left-header h2 {
+    font-size: 50px;
+}
+
+.left-header p {
+    font-size: 24px;
+    /* width: 500px; */
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.left-header-btn {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.right-header img {
+    background-color: var(--light-orange);
+    border-radius: 100px 100px 0 0;
+}
+
+/* Community */
+
+.community {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 200px; */
+}
+
+.left-community img {
+    height: 500px;
+    width: 500px;
+}
+
+.right-community-para {
+    font-size: 35px;
+}
+
+.big-header {
+    font-weight: 900;
+}
+
+.our-members-para {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.right-community button {
+    margin-top: 30px;
+}
+
+/* Review Section */
+
+.review {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+.boy-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    box-shadow:  12px 12px 30px #000;
+    padding: 20px;
+    height: 600px;
+}
+
+.without-img-review {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    box-shadow:  12px 12px 30px #000;
+    padding: 20px;
+    height: 250px;
+}
+
+.review-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.boy-review p {
+    margin-top: 20px;
+}
+
+.boy-review h2 {
+    margin-top: 20px;
+}
+
+.boy-review img {
+    margin-top: 20px;
+}
+
+.without-img-review p {
+    margin-top: 20px;
+} 
+
+.without-img-review h2 {
+    margin-top: 20px;
+}
+
+.without-img-review img {
+    margin-top: 20px;
+}
+
+.text-of-review {
+    width: 400px;
+}
+
+.text-of-review h2 {
+    font-size: 50px;
+    /* margin-top: 20px; */
+}
+
+.text-of-review p {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.text-of-review button {
+    margin-top: 20px;
+}
+
+/* Ready To Join */
+
+.ready-to-join {
+    display: flex;
+    height: 100px;
+    justify-content:center;
+    gap: 300px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.color-of-ready {
+    background-color: var(--light-orange);
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 20vh;
+    border-radius: 20px;
+}
+
+.ready-left h2 {
+    font-size: 40px;
+}
+
+.ready-left p {
+    font-size: 25px;
+    margin-top: 10px;
+}
